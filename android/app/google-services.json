@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585933726738",
+    "project_id": "disasterreliefmgnt",
+    "storage_bucket": "disasterreliefmgnt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585933726738:android:2303b145b65aedb0abe4cb",
+        "android_client_info": {
+          "package_name": "com.example.disaster_relief_mgnt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSYW9XO-3djDnfJPJ0IjHOPjx5WWD1Xho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
