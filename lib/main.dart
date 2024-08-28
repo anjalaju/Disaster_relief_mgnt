@@ -3,8 +3,9 @@ import 'dart:async';
 import 'package:disaster_relief_mgnt/firebase_options.dart';
 import 'package:disaster_relief_mgnt/view/intropage/splashscrn.dart';
 import 'package:disaster_relief_mgnt/view/user/Forgetpage.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/bottomnavi.dart';
 import 'package:disaster_relief_mgnt/view/user/forgetotppage.dart';
-import 'package:disaster_relief_mgnt/view/user/homepage.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
 import 'package:disaster_relief_mgnt/view/user/number.dart';
 import 'package:disaster_relief_mgnt/view/user/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,11 +25,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: Splash(),
+      // home: UserHomePage(),
 
-      home: NumberPage(),
+      // home: UserBottomnaviPage(),
+      home: UserBottomnaviPage(indexnum: 0),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/homepage.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
@@ -163,19 +163,22 @@ class _LogaState extends State<Forgetotppage> {
   }
 
 
-signIn() async {
-    PhoneAuthCredential credential =
-        PhoneAuthProvider.credential(verificationId: widget.vid, smsCode: code);
-    try {
-      await FirebaseAuth.instance.signInWithCredential(credential).then(
-          (value) => Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => const UserHomepage())));
-    } on FirebaseAuthException catch (e) {
-      print('Error Occured: ${e.code}');
-    } catch (e) {
-      print('Error Occured : ${e.toString()}');
-    }
+// signIn() async {
+//     PhoneAuthCredential credential =
+//         PhoneAuthProvider.credential(verificationId: widget.vid, smsCode: code);
+//     try {
+//       await FirebaseAuth.instance.signInWithCredential(credential).then(
+//           (value) => Navigator.of(context).push(
+//               MaterialPageRoute(builder: (context) => const UserHomepage()
+//               )
+//               )
+//               );
+//     } on FirebaseAuthException catch (e) {
+//       print('Error Occured: ${e.code}');
+//     } catch (e) {
+//       print('Error Occured : ${e.toString()}');
+//     }
 
   
-}
+// }
 }
