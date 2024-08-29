@@ -1,4 +1,11 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/Notificationpage.dart';
+import 'package:disaster_relief_mgnt/view/user/drawer/Review.dart';
+import 'package:disaster_relief_mgnt/view/user/drawer/about.dart';
+import 'package:disaster_relief_mgnt/view/user/drawer/complaint.dart';
+import 'package:disaster_relief_mgnt/view/user/drawer/settings.dart';
+import 'package:disaster_relief_mgnt/view/user/view_all/Viewall_homepage.dart';
+import 'package:disaster_relief_mgnt/view/user/view_all/helpline.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -94,9 +101,9 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const eventpage(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const UserHomePage(),
+                ));
               },
             ),
             const Divider(),
@@ -115,9 +122,9 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Settingpage(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const UserHelpline(),
+                ));
               },
             ),
             const Divider(),
@@ -136,9 +143,9 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Shortlist(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const Settingpage(),
+                ));
               },
             ),
             const Divider(),
@@ -157,32 +164,12 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Aboutus(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const Aboutus(),
+                ));
               },
             ),
-            const Divider(),
-            ListTile(
-              leading: const Icon(
-                Icons.edit_note,
-                color: Colors.black,
-                size: 20,
-              ),
-              title: const Text(
-                'Saved messages',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-              onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Complaint(),
-                // ));
-              },
-            ),
+            
             const Divider(),
             ListTile(
               leading: const Icon(
@@ -199,9 +186,9 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Reviews(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const Complaint(),
+                ));
               },
             ),
             const Divider(),
@@ -220,9 +207,9 @@ class _UserHomePageState extends State<UserHomePage> {
                 ),
               ),
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //   builder: (context) => const Reviews(),
-                // ));
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const Reviews(),
+                ));
               },
             ),
             const Divider(),
@@ -267,20 +254,20 @@ class _UserHomePageState extends State<UserHomePage> {
           actions: [
             IconButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //       builder: (context) => const Shortlist(),
-                  //     ));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const UserNotification(),
+                      ));
                 },
                 icon: const Icon(Icons.notifications)),
             IconButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //       builder: (context) => const BookEventScren(),
-                  //     ));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Settingpage(),
+                      ));
                 },
                 icon: const Icon(Icons.settings)),
           ]),
@@ -314,9 +301,9 @@ class _UserHomePageState extends State<UserHomePage> {
               width: 361,
               child: InkWell(
                 onTap: () {
-                  // Navigator.of(context).push(MaterialPageRoute(
-                  //   builder: (context) => const eventpage(),
-                  // ));
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const UserViewall(),
+                  ));
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

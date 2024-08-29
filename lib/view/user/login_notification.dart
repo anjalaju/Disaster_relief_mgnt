@@ -1,5 +1,6 @@
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/bottomnavi.dart';
 import 'package:flutter/material.dart';
 
 class loginNotification extends StatefulWidget {
@@ -13,7 +14,7 @@ class _loginNotificationState extends State<loginNotification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(129, 146, 204, 1),
+      backgroundColor:Appcolor.darkblue,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -96,7 +97,7 @@ class _loginNotificationState extends State<loginNotification> {
                 height: 50,
               ),
               Center(
-                child: ButtonCustom(
+                child: ButtonCustom(onbuttonpressed: () => UserBottomnaviPage(indexnum: 0,),
                   text: 'Next',
                   color: Appcolor.lighblue,
                 ),

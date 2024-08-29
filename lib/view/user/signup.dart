@@ -1,6 +1,7 @@
 import 'package:disaster_relief_mgnt/firebase_services.dart';
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
+import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -353,6 +354,7 @@ class _LogaState extends State<UserSignUp> {
                           )
                         : ButtonCustom(onbuttonpressed: () {
                           signup();
+                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>UserHomePage()));
                         },
                             text: 'Register',
                             color: Appcolor.lighblue,

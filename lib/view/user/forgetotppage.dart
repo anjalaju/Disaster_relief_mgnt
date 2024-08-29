@@ -1,6 +1,7 @@
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
 import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
+import 'package:disaster_relief_mgnt/view/user/otpsuccessfull.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
@@ -119,7 +120,7 @@ class _LogaState extends State<Forgetotppage> {
                 // ],)
                 Center(
                   child: Padding(
-                    padding: EdgeInsets.all(6),
+                    padding: const EdgeInsets.all(6),
                     child: Pinput(
                       length: 6,
                       onChanged: (value) {
@@ -150,7 +151,7 @@ class _LogaState extends State<Forgetotppage> {
                   height: 80,
                 ),
                 Center(
-                  child: ButtonCustom(
+                  child: ButtonCustom(onbuttonpressed: () => const SignupSuccessfull(),
                     text: 'Submit',
                     color: Appcolor.lighblue,
                   ),

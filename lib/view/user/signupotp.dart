@@ -15,7 +15,7 @@ class _LogaState extends State<UserSignupOtp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color.fromRGBO(129, 146, 204, 1),
+      backgroundColor: Appcolor.darkblue,
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -112,16 +112,16 @@ class _LogaState extends State<UserSignupOtp> {
                 const SizedBox(
                   height: 100,
                 ),
-                const Row(
+                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "If You Dont’t Recieve Code? ",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     Text(
                       "Resend ",
-                      style: TextStyle(color: Colors.pink, fontSize: 18),
+                      style: TextStyle(color: Appcolor.lighblue, fontSize: 18),
                     ),
                   ],
                 ),

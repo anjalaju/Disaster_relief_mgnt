@@ -1,6 +1,7 @@
 import 'package:disaster_relief_mgnt/firebase_services.dart';
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
+import 'package:disaster_relief_mgnt/view/user/Forgetpage.dart';
 import 'package:disaster_relief_mgnt/view/user/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -146,15 +147,15 @@ class _LogaState extends State<Userlogin> {
                               foregroundColor:
                                   MaterialStateProperty.all(Colors.black)),
                           onPressed: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder: (context) => const Forgetpage(),
-                            //     ));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const UserForget(),
+                                ));
                           },
-                          child: Text(
+                          child: const Text(
                             "Forgot Password?",
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Color(0xff19A8B3),
                                 fontWeight: FontWeight.bold),
                           ))
@@ -168,9 +169,11 @@ class _LogaState extends State<Userlogin> {
                         ? const Center(
                             child: CircularProgressIndicator(),
                           )
-                        : ButtonCustom(onbuttonpressed: () {
-                          signIn();
-                        },
+                        : ButtonCustom(
+                            onbuttonpressed: () {
+                          
+                              signIn();
+                            },
                             text: 'Login',
                             color: Appcolor.lighblue,
                           ),
@@ -214,15 +217,20 @@ class _LogaState extends State<Userlogin> {
                       // const SizedBox(
                       //   width: 30,
                       // ),
-                      // Container(
-                      //   height: 40,
+                      GestureDetector(
+                        onTap: () {
+                          obj1.signIneithGoogle(context);
+                        },
+                        child: Container(
+                          height: 40,
 
-                      //   width: 40,
+                          width: 40,
 
-                      //   // color: Colors.amber,
-                      //   child:
-                      //       const Image(image: AssetImage("images/google.png")),
-                      // )
+                          // color: Colors.amber,
+                          child: const Image(
+                              image: AssetImage("assets/images/google.png")),
+                        ),
+                      )
                     ],
                   ),
                   const SizedBox(

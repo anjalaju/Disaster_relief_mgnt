@@ -14,8 +14,8 @@ class _NumberPageState extends State<NumberPage> {
 
   FirebaseService az = FirebaseService();
   final phoneNumber = TextEditingController();
-  final _formkey = GlobalKey<FormState>();
-  String email = "";
+  // final _formkey = GlobalKey<FormState>();
+  // String email = "";
   // Future<void> resetPassword() async {
   //   try {
   //     await FirebaseAuth.instance
@@ -45,36 +45,36 @@ class _NumberPageState extends State<NumberPage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Form(
-            key: _formkey,
+            // key: _formkey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 130),
-                const Center(
-                    child: Text(
-                  "Forget Password?",
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.w400,
-                  ),
-                )),
-                const SizedBox(height: 40),
-                const Center(
-                  child: Text(
-                    "we’ll send a verification code",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Color.fromARGB(255, 217, 217, 217)),
-                  ),
-                ),
-                const Center(
-                  child: Text(
-                    " to this email or phone number",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Color.fromARGB(255, 217, 217, 217)),
-                  ),
-                ),
+                // const SizedBox(height: 130),
+                // const Center(
+                //     child: Text(
+                //   "Forget Password?",
+                //   style: TextStyle(
+                //     fontSize: 32,
+                //     fontWeight: FontWeight.w400,
+                //   ),
+                // )),
+                // const SizedBox(height: 40),
+                // const Center(
+                //   child: Text(
+                //     "we’ll send a verification code",
+                //     style: TextStyle(
+                //         fontSize: 20,
+                //         color: Color.fromARGB(255, 217, 217, 217)),
+                //   ),
+                // ),
+                // const Center(
+                //   child: Text(
+                //     " to this email or phone number",
+                //     style: TextStyle(
+                //         fontSize: 20,
+                //         color: Color.fromARGB(255, 217, 217, 217)),
+                //   ),
+                // ),
                 const SizedBox(height: 80),
                 TextFormField(
                 controller: phoneNumber,
@@ -86,7 +86,7 @@ class _NumberPageState extends State<NumberPage> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     // hintText: ("Enter Your Email/phone no"),
-                    hintText: ("Enter Your Email"),
+                    hintText: ("Enter Your phone Number"),
                   ),
                 ),
                 const SizedBox(
