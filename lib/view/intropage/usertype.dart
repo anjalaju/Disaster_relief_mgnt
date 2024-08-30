@@ -1,7 +1,7 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
 import 'package:disaster_relief_mgnt/utils/string.dart';
 import 'package:disaster_relief_mgnt/view/intropage/usertypee.dart';
-import 'package:disaster_relief_mgnt/view/user/splash.dart';
+import 'package:disaster_relief_mgnt/view/user/formscreen/splash.dart';
 import 'package:flutter/material.dart';
 
 class UserType extends StatelessWidget {

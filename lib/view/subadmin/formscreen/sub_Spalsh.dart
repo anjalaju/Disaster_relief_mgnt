@@ -1,16 +1,15 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/login.dart';
-import 'package:disaster_relief_mgnt/view/user/welcomepage.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/formscreen/sub_welcome.dart';
 import 'package:flutter/material.dart';
 
-class UserSplash extends StatefulWidget {
-  const UserSplash({super.key});
+class SubSplash extends StatefulWidget {
+  const SubSplash({super.key});
 
   @override
-  State<UserSplash> createState() => _UserSplashState();
+  State<SubSplash> createState() => _SubSplashState();
 }
 
-class _UserSplashState extends State<UserSplash> {
+class _SubSplashState extends State<SubSplash> {
   @override
   void initState() {
     gotoMain();
@@ -36,7 +35,7 @@ class _UserSplashState extends State<UserSplash> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => UserWelcome(),
+          builder: (context) => SubWelcome(),
         ));
   }
 }

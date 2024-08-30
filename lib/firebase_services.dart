@@ -1,5 +1,5 @@
-import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
-import 'package:disaster_relief_mgnt/view/user/forgetotppage.dart';
+import 'package:disaster_relief_mgnt/view/user/bottomnavigation/homepage.dart';
+import 'package:disaster_relief_mgnt/view/user/formscreen/forgetotppage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';

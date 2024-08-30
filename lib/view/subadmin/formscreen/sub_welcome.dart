@@ -1,15 +1,15 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/login.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/formscreen/sub_login.dart';
 import 'package:flutter/material.dart';
 
-class UserWelcome extends StatefulWidget {
-  const UserWelcome({super.key});
+class SubWelcome extends StatefulWidget {
+  const SubWelcome({super.key});
 
   @override
-  State<UserWelcome> createState() => _LogaState();
+  State<SubWelcome> createState() => _LogaState();
 }
 
-class _LogaState extends State<UserWelcome> {
+class _LogaState extends State<SubWelcome> {
   @override
   Widget build(BuildContext context) {
     // return WillPopScope(
@@ -56,7 +56,9 @@ class _LogaState extends State<UserWelcome> {
                             WidgetStateProperty.all(Appcolor.lighblue)),
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Userlogin()));
+                          MaterialPageRoute(builder: (context) => Sublogin())
+                          
+                          );
                     },
                     child: const Text(
                       "WELCOME",

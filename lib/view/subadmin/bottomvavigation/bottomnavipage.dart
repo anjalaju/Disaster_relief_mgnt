@@ -1,8 +1,8 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/UI/Notificationpage.dart';
-import 'package:disaster_relief_mgnt/view/user/UI/accountpage.dart';
-import 'package:disaster_relief_mgnt/view/user/UI/homepage.dart';
-import 'package:disaster_relief_mgnt/view/user/UI/searchpage.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/bottomvavigation/Sub_homepage.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/bottomvavigation/sub_account.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/bottomvavigation/sub_notification.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/bottomvavigation/sub_search.dart';
 import 'package:flutter/material.dart';
 
 class UserBottomnaviPage extends StatefulWidget {
@@ -16,10 +16,10 @@ class UserBottomnaviPage extends StatefulWidget {
 
 class _UserBottomnaviPageState extends State<UserBottomnaviPage> {
   final _pages = [
-    const UserHomePage(),
-    const UserSerachPage(),
-    const UserNotification(),
-    const UserAccountPage(),
+    const SubHomepage(),
+    const SubSerachPage(),
+    const SubNotification(),
+    const SubAccountpage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,6 @@ Widget myNav({
         label: 'Notification',
         backgroundColor: Color(0xffB7B7B7),
       ),
-     
       BottomNavigationBarItem(
           icon: Icon(Icons.account_box),
           label: 'Account',

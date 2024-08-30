@@ -1,10 +1,9 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/UI/Notificationpage.dart';
+import 'package:disaster_relief_mgnt/view/user/bottomnavigation/Notificationpage.dart';
 import 'package:disaster_relief_mgnt/view/user/drawer/Review.dart';
 import 'package:disaster_relief_mgnt/view/user/drawer/about.dart';
 import 'package:disaster_relief_mgnt/view/user/drawer/complaint.dart';
 import 'package:disaster_relief_mgnt/view/user/drawer/settings.dart';
-import 'package:disaster_relief_mgnt/view/user/view_all/Viewall_homepage.dart';
 import 'package:disaster_relief_mgnt/view/user/view_all/helpline.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -144,7 +143,7 @@ class _UserHomePageState extends State<UserHomePage> {
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const Settingpage(),
+                  builder: (context) => const UserSettingpage(),
                 ));
               },
             ),
@@ -266,7 +265,7 @@ class _UserHomePageState extends State<UserHomePage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Settingpage(),
+                        builder: (context) => const UserSettingpage(),
                       ));
                 },
                 icon: const Icon(Icons.settings)),
@@ -290,102 +289,102 @@ class _UserHomePageState extends State<UserHomePage> {
                   // ),
                   ),
             ),
-            const SizedBox(
-              height: 70,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color(0xffD9D9D9),
-                  borderRadius: BorderRadius.circular(20)),
-              height: 111,
-              width: 361,
-              child: InkWell(
-                onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const UserViewall(),
-                  ));
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(left: 20.0),
-                      child: Text(
-                        "User",
-                        style: TextStyle(
-                            fontSize: 35, fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        height: 111,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          // color: Colors.red
-                        ),
-                        // child: const Image(
-                        //   image: AssetImage(
-                        //     "images/Mainevent.jpg",
-                        //   ),
-                        //   fit: BoxFit.fill,
-                        // ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color(0xffD9D9D9),
-                  borderRadius: BorderRadius.circular(20)),
-              height: 111,
-              width: 361,
-              child: InkWell(
-                onTap: () {
-                  // Navigator.of(context).push(MaterialPageRoute(
-                  //   builder: (context) => const Charityhomepage(),
-                  // ));
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(left: 20.0),
-                      child: Text(
-                        "Volunteer",
-                        style: TextStyle(
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        height: 111,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          // color: Colors.red
-                        ),
-                        // child: const Image(
-                        //   image: AssetImage(
-                        //     "images/Charity.jpeg",
-                        //   ),
-                        //   fit: BoxFit.fill,
-                        // ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            // const SizedBox(
+            //   height: 70,
+            // ),
+            // Container(
+            //   decoration: BoxDecoration(
+            //       color: const Color(0xffD9D9D9),
+            //       borderRadius: BorderRadius.circular(20)),
+            //   height: 111,
+            //   width: 361,
+            //   child: InkWell(
+            //     onTap: () {
+            //       Navigator.of(context).push(MaterialPageRoute(
+            //         builder: (context) => const UserViewall(),
+            //       ));
+            //     },
+            //     child: Row(
+            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //       children: [
+            //         const Padding(
+            //           padding: EdgeInsets.only(left: 20.0),
+            //           child: Text(
+            //             "User",
+            //             style: TextStyle(
+            //                 fontSize: 35, fontWeight: FontWeight.bold),
+            //           ),
+            //         ),
+            //         ClipRRect(
+            //           borderRadius: BorderRadius.circular(20),
+            //           child: Container(
+            //             height: 111,
+            //             width: 100,
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               // color: Colors.red
+            //             ),
+            //             // child: const Image(
+            //             //   image: AssetImage(
+            //             //     "images/Mainevent.jpg",
+            //             //   ),
+            //             //   fit: BoxFit.fill,
+            //             // ),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // const SizedBox(
+            //   height: 50,
+            // ),
+            // Container(
+            //   decoration: BoxDecoration(
+            //       color: const Color(0xffD9D9D9),
+            //       borderRadius: BorderRadius.circular(20)),
+            //   height: 111,
+            //   width: 361,
+            //   child: InkWell(
+            //     onTap: () {
+            //       // Navigator.of(context).push(MaterialPageRoute(
+            //       //   builder: (context) => const Charityhomepage(),
+            //       // ));
+            //     },
+            //     child: Row(
+            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //       children: [
+            //         const Padding(
+            //           padding: EdgeInsets.only(left: 20.0),
+            //           child: Text(
+            //             "Volunteer",
+            //             style: TextStyle(
+            //               fontSize: 35,
+            //               fontWeight: FontWeight.bold,
+            //             ),
+            //           ),
+            //         ),
+            //         ClipRRect(
+            //           borderRadius: BorderRadius.circular(20),
+            //           child: Container(
+            //             height: 111,
+            //             width: 100,
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               // color: Colors.red
+            //             ),
+            //             // child: const Image(
+            //             //   image: AssetImage(
+            //             //     "images/Charity.jpeg",
+            //             //   ),
+            //             //   fit: BoxFit.fill,
+            //             // ),
+            //           ),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

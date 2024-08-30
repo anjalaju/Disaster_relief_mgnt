@@ -1,9 +1,7 @@
-import 'dart:developer';
-import 'dart:io';
 
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/utils/string.dart';
+import 'package:disaster_relief_mgnt/view/user/view_all/viewall_donatelist.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -41,6 +39,14 @@ class _LogaState extends State<ViewallDonate> {
           ),
           color: Colors.black,
         ),
+           actions: [
+        
+          IconButton(onPressed: () {
+            Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => DonatedList()),
+      );
+          }, icon: const Icon(Icons.chat_outlined))
+        ],
       ),
       backgroundColor: Appcolor.lighblue,
       body: SingleChildScrollView(

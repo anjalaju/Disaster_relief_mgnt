@@ -1,14 +1,14 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
 import 'package:flutter/material.dart';
 
-class UserSettingpage extends StatefulWidget {
-  const UserSettingpage({super.key});
+class Settingpage extends StatefulWidget {
+  const Settingpage({super.key});
 
   @override
-  State<UserSettingpage> createState() => _UserSettingpageState();
+  State<Settingpage> createState() => _SettingpageState();
 }
 
-class _UserSettingpageState extends State<UserSettingpage> {
+class _SettingpageState extends State<Settingpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

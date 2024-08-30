@@ -1,6 +1,5 @@
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
-import 'package:disaster_relief_mgnt/view/user/otpsuccessfull.dart';
 import 'package:flutter/material.dart';
 
 class UserSignupOtp extends StatefulWidget {

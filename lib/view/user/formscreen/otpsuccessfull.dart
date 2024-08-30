@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:disaster_relief_mgnt/view/user/login_notification.dart';
+import 'package:disaster_relief_mgnt/view/user/formscreen/login_notification.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

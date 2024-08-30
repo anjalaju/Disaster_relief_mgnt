@@ -1,5 +1,7 @@
 import 'package:disaster_relief_mgnt/utils/colors.dart';
 import 'package:disaster_relief_mgnt/utils/string.dart';
+import 'package:disaster_relief_mgnt/view/admin/formscreen/admin_Spalsh.dart';
+import 'package:disaster_relief_mgnt/view/subadmin/formscreen/sub_Spalsh.dart';
 import 'package:flutter/material.dart';
 
 class UserTypee extends StatelessWidget {
@@ -30,12 +32,12 @@ class UserTypee extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const EntrewelcomeEnterpRenur(),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const AdminSplash(),
+                          ),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -58,11 +60,11 @@ class UserTypee extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => Swipee(),
-                        //     ));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SubSplash(),
+                            ));
                       },
                       child: Container(
                         decoration: BoxDecoration(
