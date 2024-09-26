@@ -31,11 +31,11 @@ class _SplashState extends State<Splash> {
   }
 
   Future<void> gotoMain() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => UserType(),
+          builder: (context) => const UserType(),
         ));
   }
 }

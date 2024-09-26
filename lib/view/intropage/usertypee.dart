@@ -63,7 +63,7 @@ class UserTypee extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SubSplash(),
+                              builder: (context) => const SubSplash(),
                             ));
                       },
                       child: Container(

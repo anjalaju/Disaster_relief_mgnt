@@ -63,7 +63,7 @@ class UserType extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => UserSplash(),
+                              builder: (context) => const UserSplash(),
                             ));
                       },
                       child: Container(

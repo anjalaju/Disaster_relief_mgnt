@@ -1,4 +1,4 @@
-import 'package:disaster_relief_mgnt/firebase_services.dart';
+import 'package:disaster_relief_mgnt/firebase/firebase_services.dart';
 import 'package:disaster_relief_mgnt/utils/button.dart';
 import 'package:disaster_relief_mgnt/utils/colors.dart';
 import 'package:flutter/material.dart';

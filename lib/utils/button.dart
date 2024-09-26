@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
+// ignore: must_be_immutable
 class ButtonCustom extends StatelessWidget {
   String text;
   Color? color;
@@ -20,7 +19,7 @@ class ButtonCustom extends StatelessWidget {
         onPressed: onbuttonpressed,
         child: Text(
           text,
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ));
   }
 }

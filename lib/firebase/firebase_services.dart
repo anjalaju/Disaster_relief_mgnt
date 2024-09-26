@@ -6,6 +6,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 class FirebaseService {
   FirebaseAuth s = FirebaseAuth.instance;
+  // final s = FirebaseAuth.instance;
 
   // signup
   Future<User?> signupwithEmailandpassword(
@@ -95,8 +96,8 @@ class FirebaseService {
             idToken: googleSignInAuthentication.idToken,
             accessToken: googleSignInAuthentication.accessToken);
         await s.signInWithCredential(credential);
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => UserHomePage()));
+        Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const UserHomePage()));
       }
     } catch (e) {
       print("Some error occured $e");
